@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to bottom, rgb(33, 50, 146), rgb(55, 73, 172));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.015rem;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 28.125rem;
+  background-color: hsl(225deg, 100%, 98%);
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 2rem 2rem 4rem rgba(109, 155, 255, 0.4);
+  cursor: default;
+  transform: scale(0.85);
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+  transition: all 0.4s;
+}
+.component:hover {
+  transform: scale(1);
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+.component__data {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.component__data__header {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  margin-top: 2.5rem;
+}
+.component__data__desc {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+  width: 100%;
+}
+.component__data__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsla(226deg, 100%, 96%, 0.856);
+  width: 90%;
+  padding: 1.3rem;
+  margin-top: 1.5rem;
+  border-radius: 1.2rem;
+}
+.component__data__box__first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.component__data__box__first__text {
+  margin-left: 1.1rem;
+}
+.component__data__box__first__text-main {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(223deg, 47%, 23%);
+  font-weight: 900;
+  font-size: 1rem;
+}
+.component__data__box__first__text-second {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(224deg, 23%, 55%);
+  font-weight: 400;
+  font-size: 1rem;
+}
+.component__data__box__change {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(245deg, 75%, 52%);
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.component__data__box__change:hover {
+  color: hsl(245deg, 88%, 62%);
+}
+.component__data__button {
+  background-color: hsl(245deg, 75%, 52%);
+  color: hsl(225deg, 100%, 98%);
+  border: none;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.8rem;
+  box-shadow: 1rem 1rem 2rem rgba(21, 42, 226, 0.2);
+  border-radius: 1.2rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.component__data__button:hover {
+  background-color: hsl(245deg, 88%, 62%);
+}
+.component__data__cancel {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: hsl(224deg, 23%, 55%);
+  margin: 2rem 0 2rem 0;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.component__data__cancel:hover {
+  color: hsl(223deg, 47%, 23%);
+}
+
+/*# sourceMappingURL=style.css.map */

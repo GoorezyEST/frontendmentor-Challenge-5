@@ -1,0 +1,165 @@
+//Colors
+$blue-super-light: hsl(225, 100%, 98%);
+$blue-light: hsl(225, 100%, 94%);
+$blue-bright: hsl(245, 75%, 52%);
+$blue-desaturated: hsl(224, 23%, 55%);
+$blue-dark: hsl(223, 47%, 23%);
+//Font sizes
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.3125rem;
+$font-size-2xl: 1.5rem;
+$font-size-3xl: 2.652rem;
+$font-size-4xl: 4rem;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(33, 50, 146),
+    rgb(55, 73, 172)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.015rem;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 28.125rem;
+  background-color: $blue-super-light;
+  border-radius: 1.2rem;
+  overflow: hidden;
+  box-shadow: 2rem 2rem 4rem rgba(109, 155, 255, 0.4);
+  cursor: default;
+  transform: scale(0.85);
+  -webkit-filter: brightness(0.5);
+  filter: brightness(0.5);
+  transition: all 0.4s;
+
+  &:hover {
+    transform: scale(1);
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+  }
+
+  &__data {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    &__header {
+      font-family: "Red Hat Display", sans-serif;
+      color: $blue-dark;
+      font-weight: 900;
+      margin-top: 2.5rem;
+    }
+
+    &__desc {
+      font-family: "Red Hat Display", sans-serif;
+      color: $blue-desaturated;
+      font-weight: 400;
+      font-size: 1rem;
+      margin-top: 1.2rem;
+      width: 100%;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background-color: hsla(226, 100%, 96%, 0.856);
+      width: 90%;
+      padding: 1.3rem;
+      margin-top: 1.5rem;
+      border-radius: 1.2rem;
+
+      &__first {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &__text {
+          margin-left: 1.1rem;
+
+          &-main {
+            font-family: "Red Hat Display", sans-serif;
+            color: $blue-dark;
+            font-weight: 900;
+            font-size: 1rem;
+          }
+
+          &-second {
+            font-family: "Red Hat Display", sans-serif;
+            color: $blue-desaturated;
+            font-weight: 400;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      &__change {
+        font-family: "Red Hat Display", sans-serif;
+        color: $blue-bright;
+        font-weight: 400;
+        font-size: 1rem;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          color: hsl(245, 88%, 62%);
+        }
+      }
+    }
+
+    &__button {
+      background-color: $blue-bright;
+      color: $blue-super-light;
+      border: none;
+      font-family: "Red Hat Display", sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      width: 100%;
+      padding: 1rem;
+      margin-top: 1.8rem;
+      box-shadow: 1rem 1rem 2rem rgb(21, 42, 226, 0.2);
+      border-radius: 1.2rem;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        background-color: hsl(245, 88%, 62%);
+      }
+    }
+
+    &__cancel {
+      font-family: "Red Hat Display", sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: $blue-desaturated;
+      margin: 2rem 0 2rem 0;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:hover {
+        color: $blue-dark;
+      }
+    }
+  }
+}
